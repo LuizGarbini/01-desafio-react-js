@@ -1,4 +1,4 @@
-:colors {
+:root {
   --Gray-100: #f2f2f2;
   --Gray-200: #e5e5e5;
   --Gray-300: #808080;
@@ -9,7 +9,28 @@
 
   --Purple: #8284fa;
   --PurpleDark: #5e60ce;
+
   --Blue: #4ea8de;
   --BlueDark: #1e6f9f;
+
   --Danger: #e25858;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Gray-700);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
