@@ -1,0 +1,15 @@
+:colors {
+  --Gray-100: #f2f2f2;
+  --Gray-200: #e5e5e5;
+  --Gray-300: #808080;
+  --Gray-400: #333333;
+  --Gray-500: #262626;
+  --Gray-600: #1a1a1a;
+  --Gray-700: #0d0d0d;
+
+  --Purple: #8284fa;
+  --PurpleDark: #5e60ce;
+  --Blue: #4ea8de;
+  --BlueDark: #1e6f9f;
+  --Danger: #e25858;
+}
