@@ -4,14 +4,16 @@ import img from "./logo.svg";
 
 import "./global.css";
 
-function App() {
+export function App() {
   return (
     <div className="App">
       <div>
         <img src="../public/logo.svg" alt="" />
       </div>
+      <div className="InputBackground">
+        <input type="text" />
+        <button> Criar </button>
+      </div>
     </div>
   );
 }
-
-export default App;
