@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import img from "./logo.svg";
+import { Tasks } from "./tasks";
 
 import "./global.css";
 
