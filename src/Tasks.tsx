@@ -4,8 +4,9 @@ import "./Tasks.css";
 
 export function Tasks() {
   return (
-    <div>
-      <p>teste</p>
+    <div className="tasksTop">
+      <span id="tasksCreate">Tarefas criadas</span>
+      <span id="tasksCompleted">Concluídas</span>
     </div>
   );
 }

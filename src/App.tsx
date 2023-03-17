@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import img from "./logo.svg";
 import { PlusCircle } from "@phosphor-icons/react";
-import { Tasks } from "./tasks";
+import { Tasks } from "./Tasks";
 
 import "./global.css";
 
@@ -20,6 +20,9 @@ export function App() {
             Criar <PlusCircle size={22} />{" "}
           </button>
         </div>
+      </div>
+      <div>
+        <Tasks />
       </div>
     </div>
   );

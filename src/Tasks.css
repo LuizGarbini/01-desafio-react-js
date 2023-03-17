@@ -1,0 +1,12 @@
+.tasksTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tasksCreate {
+  color: var(--Blue);
+}
+
+#tasksCompleted {
+  color: var(--Purple);
+}
