@@ -1,5 +1,13 @@
-.tasksTop {
+.tasksEmpty {
+  margin-top: 64px;
   display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.task-top-center {
+  display: flex;
+  width: 736px;
   justify-content: space-between;
 }
 
