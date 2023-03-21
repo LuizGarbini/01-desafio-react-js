@@ -1,19 +1,20 @@
 import { useState } from "react";
-import "./App.css";
 import img from "./logo.svg";
 import { PlusCircle } from "@phosphor-icons/react";
-import { Tasks } from "./Tasks";
+import { Tasks } from "./components/Tasks";
 
 import "./global.css";
+import stylesTasks from "./components/Tasks.module.css";
+import stylesApp from "./App.module.css";
 
 export function App() {
   return (
-    <div className="App">
-      <header>
+    <div>
+      <header className={stylesApp.header}>
         <img src="../public/logo.svg" alt="" />
       </header>
-      <div className="InputAndButton">
-        <div className="InputSize">
+      <div className={stylesApp.inputAndButton}>
+        <div className={stylesApp.inputSize}>
           <input type="text" placeholder="Adicione um nova tarefa" />
           <button>
             {" "}

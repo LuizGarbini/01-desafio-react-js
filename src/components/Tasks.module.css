@@ -5,16 +5,18 @@
   justify-content: center;
 }
 
-.task-top-center {
+.taskTopCenter {
   display: flex;
   width: 736px;
   justify-content: space-between;
 }
 
-#tasksCreate {
+.tasksCreate {
   color: var(--Blue);
+  font-weight: bold;
 }
 
-#tasksCompleted {
+.tasksCompleted {
   color: var(--Purple);
+  font-weight: bold;
 }

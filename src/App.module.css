@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -8,26 +8,31 @@ header {
   background-color: var(--Gray-700);
 }
 
-.InputAndButton {
+.inputAndButton {
   display: flex;
   justify-content: center;
   margin-top: -28px;
 }
 
-.InputSize {
+.inputSize {
   display: flex;
   width: 736px;
   justify-content: space-between;
 }
 
-.InputSize input {
+.inputSize input {
   height: 54px;
   width: 638px;
   padding: 16px;
   border-radius: 8px;
+  color: var(--Gray-300);
+  background-color: var(--Gray-500);
+  border: 1px solid var(--Gray-700);
 }
 
-.InputSize button {
+.inputSize button {
+  background-color: var(--BlueDark);
+  color: var(--Gray-100);
   display: flex;
   width: 90px;
   height: 100%;

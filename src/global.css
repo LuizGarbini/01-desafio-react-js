@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: #454545;
+  background-color: var(--Gray-600);
 }
 
 body,
