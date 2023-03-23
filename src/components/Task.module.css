@@ -1,0 +1,33 @@
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+}
+
+.ContentDiv {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 20px;
+  background-color: var(--Gray-500);
+  color: var(--Gray-100);
+  width: 100%;
+}
+
+.ContentDivCompleted {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 20px;
+  background-color: var(--Gray-500);
+  color: var(--Gray-100);
+  width: 100%;
+}
+
+.ContentDivCompleted p {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
