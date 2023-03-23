@@ -83,7 +83,7 @@ export function App() {
               task={task}
               handleToggleTaskStatus={handleToggleTaskStatus}
               handleRemoveTask={handleRemoveTask}
-              key={task.id}
+              key={task.title}
             />
           );
         })}
