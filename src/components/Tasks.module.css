@@ -9,6 +9,7 @@
   display: flex;
   width: 736px;
   justify-content: space-between;
+  padding-bottom: 12px;
 }
 
 .tasksCreate {
