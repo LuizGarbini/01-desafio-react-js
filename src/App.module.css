@@ -31,6 +31,7 @@
 }
 
 .inputSize button {
+  cursor: pointer;
   background-color: var(--BlueDark);
   color: var(--Gray-100);
   display: flex;

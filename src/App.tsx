@@ -59,7 +59,7 @@ export function App() {
       <header className={stylesApp.header}>
         <img src="../public/logo.svg" alt="" />
       </header>
-      <div className={stylesApp.inputAndButton}>
+      <form className={stylesApp.inputAndButton}>
         <div className={stylesApp.inputSize}>
           <input
             onChange={(event) => setNewTaskTitle(event.target.value)}
@@ -72,7 +72,7 @@ export function App() {
             Criar <PlusCircle size={22} />{" "}
           </button>
         </div>
-      </div>
+      </form>
       <div>
         <Tasks />
       </div>
