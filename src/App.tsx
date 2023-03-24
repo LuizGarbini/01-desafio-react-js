@@ -32,7 +32,7 @@ export function App() {
     };
 
     setTasks(tasks ? [...tasks, newTask] : [newTask]);
-    // setNewTaskTitle("");
+    setNewTaskTitle("");
   }
 
   function handleToggleTaskStatus(id: number) {
@@ -55,7 +55,7 @@ export function App() {
   }, [tasks]);
 
   return (
-    <div>
+    <div className={stylesApp.content}>
       <header className={stylesApp.header}>
         <img src="../public/logo.svg" alt="" />
       </header>

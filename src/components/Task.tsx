@@ -31,9 +31,8 @@ export function Task(props: TaskProps) {
         />
 
         <p>{title}</p>
+        <button onClick={() => handleRemoveTask(id)}>excluir</button>
       </div>
-
-      <button onClick={() => handleRemoveTask(id)}>excluir</button>
     </div>
   );
 }
