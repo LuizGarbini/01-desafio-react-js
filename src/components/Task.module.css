@@ -1,8 +1,9 @@
 .Content {
+  width: 736px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 .ContentDiv {
@@ -27,7 +28,17 @@
   width: 100%;
 }
 
+.ContentDiv p {
+  flex: 1;
+}
+
 .ContentDivCompleted p {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.tresh {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
 }

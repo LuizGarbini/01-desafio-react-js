@@ -59,7 +59,10 @@ export function App() {
       <header className={stylesApp.header}>
         <img src="../public/logo.svg" alt="" />
       </header>
-      <form className={stylesApp.inputAndButton}>
+      <form
+        className={stylesApp.inputAndButton}
+        onSubmit={(event) => event.preventDefault()}
+      >
         <div className={stylesApp.inputSize}>
           <input
             onChange={(event) => setNewTaskTitle(event.target.value)}
@@ -76,7 +79,7 @@ export function App() {
       <div>
         <Tasks />
       </div>
-      <div>
+      <div className={stylesApp.contentTask}>
         {tasks?.map((task) => {
           return (
             <Task
