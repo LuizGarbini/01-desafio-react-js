@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import { Trash } from "@phosphor-icons/react";
+
 import stylesTask from "./Task.module.css";
 import { Task as TaskType } from "../App";
 
@@ -35,7 +37,7 @@ export function Task(props: TaskProps) {
           className={stylesTask.trash}
           onClick={() => handleRemoveTask(id)}
         >
-          excluir
+          <Trash size={22} />
         </button>
       </div>
     </div>

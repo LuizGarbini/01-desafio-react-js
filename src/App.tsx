@@ -8,8 +8,6 @@ import "./global.css";
 import stylesTasks from "./components/Tasks.module.css";
 import stylesApp from "./App.module.css";
 
-const comments = [1, 2, 3];
-
 export type Task = {
   id: number;
   title: string;
@@ -52,7 +50,7 @@ export function App() {
 
   useEffect(() => {
     console.log({ tasks });
-  }, [tasks]);
+  }, [tasks?.length]);
 
   return (
     <div className={stylesApp.content}>

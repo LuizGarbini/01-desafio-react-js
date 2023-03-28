@@ -38,8 +38,11 @@
   flex: 1;
 }
 
-.tresh {
+.trash {
   width: 24px;
   height: 24px;
   border-radius: 4px;
+  color: var(--Gray-300);
+  cursor: pointer;
+  background-color: transparent;
 }
