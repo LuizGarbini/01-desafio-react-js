@@ -52,6 +52,9 @@ export function App() {
     console.log({ tasks });
   }, [tasks?.length]);
 
+  const taskQuantity = tasks?.length;
+  const tasksCompleted = tasks?.filter((task) => task.isCompleted).length;
+
   return (
     <div className={stylesApp.content}>
       <header className={stylesApp.header}>
@@ -81,6 +84,8 @@ export function App() {
         {tasks?.map((task) => {
           return (
             <Task
+              taskQuantity={taskQuantity}
+              tasksCompleted={tasksCompleted}
               task={task}
               handleToggleTaskStatus={handleToggleTaskStatus}
               handleRemoveTask={handleRemoveTask}
