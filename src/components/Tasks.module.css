@@ -21,3 +21,31 @@
   color: var(--Purple);
   font-weight: bold;
 }
+
+input[type="checkbox"] {
+  border-radius: 15px;
+  border: 3px solid var(--Blue);
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]:checked {
+  border: 3px solid var(--PurpleDark);
+  background: var(--PurpleDark);
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
