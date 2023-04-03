@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import img from "./logo.svg";
 import { PlusCircle } from "@phosphor-icons/react";
+import { ClipboardText } from "@phosphor-icons/react";
 import { Tasks } from "./components/Tasks";
 import { Task } from "./components/Task";
 
@@ -49,11 +50,13 @@ export function App() {
   }
 
   useEffect(() => {
-    console.log({ tasks });
+    console.log({ tasks: tasks?.length });
   }, [tasks?.length]);
 
   const taskQuantity = tasks?.length;
   const tasksCompleted = tasks?.filter((task) => task.isCompleted).length;
+
+  const hasTasks = Boolean(taskQuantity);
 
   return (
     <div className={stylesApp.content}>
@@ -78,21 +81,29 @@ export function App() {
         </div>
       </form>
       <div>
-        <Tasks />
+        <Tasks taskQuantity={taskQuantity} tasksCompleted={tasksCompleted} />
       </div>
       <div className={stylesApp.contentTask}>
-        {tasks?.map((task) => {
-          return (
-            <Task
-              taskQuantity={taskQuantity}
-              tasksCompleted={tasksCompleted}
-              task={task}
-              handleToggleTaskStatus={handleToggleTaskStatus}
-              handleRemoveTask={handleRemoveTask}
-              key={task.title}
-            />
-          );
-        })}
+        {hasTasks ? (
+          <div>
+            {tasks?.map((task) => {
+              return (
+                <Task
+                  task={task}
+                  handleToggleTaskStatus={handleToggleTaskStatus}
+                  handleRemoveTask={handleRemoveTask}
+                  key={task.title}
+                />
+              );
+            })}
+          </div>
+        ) : (
+          <div className={stylesApp.contentTaskEmpty}>
+            <ClipboardText size={56} />
+            <p>Você ainda não tem tarefas cadastradas</p>
+            <p>Crie Tarefas e organize seus itens a fazer</p>
+          </div>
+        )}
       </div>
     </div>
   );

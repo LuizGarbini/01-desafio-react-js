@@ -10,8 +10,6 @@ type TaskProps = {
   task: TaskType;
   handleToggleTaskStatus: (id: number) => void;
   handleRemoveTask: (id: number) => void;
-  taskQuantity: number | undefined;
-  tasksCompleted: number | undefined;
 };
 
 export function Task(props: TaskProps) {
@@ -19,8 +17,6 @@ export function Task(props: TaskProps) {
     task: { title, id, isCompleted },
     handleToggleTaskStatus,
     handleRemoveTask,
-    taskQuantity,
-    tasksCompleted,
   } = props;
 
   return (

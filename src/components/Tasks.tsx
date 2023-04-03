@@ -5,12 +5,32 @@ import { App } from "../App";
 
 import stylesApp from "./Tasks.module.css";
 
-export function Tasks() {
+type TasksProps = {
+  taskQuantity: number | undefined;
+  tasksCompleted: number | undefined;
+};
+
+export function Tasks(props: TasksProps) {
+  const { tasksCompleted, taskQuantity } = props;
+
+  const hasTasks = Boolean(taskQuantity);
+
   return (
     <div className={stylesApp.tasksEmpty}>
       <div className={stylesApp.taskTopCenter}>
-        <span className={stylesApp.tasksCreate}>Tarefas criadas </span>
-        <span className={stylesApp.tasksCompleted}>Concluídas</span>
+        <span className={stylesApp.tasksCreate}>
+          Tarefas criadas <div>{taskQuantity ?? 0}</div>
+        </span>
+        <span className={stylesApp.tasksCompleted}>
+          Concluídas
+          {hasTasks ? (
+            <div>
+              {tasksCompleted} de {taskQuantity}
+            </div>
+          ) : (
+            <div>0</div>
+          )}
+        </span>
       </div>
     </div>
   );

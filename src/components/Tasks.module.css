@@ -15,11 +15,31 @@
 .tasksCreate {
   color: var(--Blue);
   font-weight: bold;
+  display: flex;
+  gap: 5px;
+}
+
+.tasksCreate div {
+  background: var(--Gray-400);
+  color: var(--Gray-200);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
 }
 
 .tasksCompleted {
   color: var(--Purple);
   font-weight: bold;
+  display: flex;
+  gap: 5px;
+}
+
+.tasksCompleted div {
+  background: var(--Gray-400);
+  color: var(--Gray-200);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
 }
 
 input[type="checkbox"] {
