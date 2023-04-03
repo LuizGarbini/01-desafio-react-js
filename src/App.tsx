@@ -101,7 +101,7 @@ export function App() {
           <div className={stylesApp.contentTaskEmpty}>
             <ClipboardText size={56} />
             <p>Você ainda não tem tarefas cadastradas</p>
-            <p>Crie Tarefas e organize seus itens a fazer</p>
+            <p>Crie tarefas e organize seus itens a fazer</p>
           </div>
         )}
       </div>
